@@ -23,6 +23,8 @@
     font-style: normal;
 }
 
+/* GENERAL */
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -43,11 +45,21 @@
 	position:relative;
 }
 
+.full-width-separator {
+	height:1px;
+	width:100%;
+	background-color: #bdbdbd;
+}
+
+/* END GENERAL */
+
 body {
 	background: url(../img/subtlenet2.png) center center repeat;	
 	font-family: 'Montserrat-Regular';
 	font-size: 16px;
 }
+
+/* HEADER */
 header {
 	margin-top:5px;	
 	margin-bottom: 5px;	
@@ -55,9 +67,10 @@ header {
 
 #language {
 	background: url(../img/transparent.png) repeat;
-	height: 50px;
+	height: 40px;
 	border-radius: 10px;
 	min-width:165px;
+	max-width: 405px;
 	margin-top:10px;
 	cursor:pointer;
 }
@@ -68,19 +81,16 @@ header {
 	float:left;
 	width: 60px;
 	line-height: 14px;
-	padding-top: 12px;
+	padding-top: 6px;
 	padding-left: 12px;
 }
-
-.full-width-separator {
-	height:1px;
-	width:100%;
-	background-color: #bdbdbd;
+#logo {
 }
 .flag {
 	background: url(../img/flagUK.jpg) center center no-repeat;
 	width: 60px;
 	height: 30px;
 	margin-left: 7px;
-	margin-top:12px;
+	margin-top:6px;
 }
+/* END HEADER */
