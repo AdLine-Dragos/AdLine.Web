@@ -77,28 +77,29 @@ header {
 
 #language {
 	background: url(../img/transparent.png) repeat;
-	height: 40px;
+	height: 30px;
 	border-radius: 10px;
-	min-width:165px;
-	max-width: 405px;
-	margin-top:10px;
 	cursor:pointer;
+	min-width: 180px;
+	padding-top:3px;
+	margin-top:3px;
 }
 #language div {
 	float:left;
 }
 #language p {
 	float:left;
-	width: 60px;
+
 	line-height: 14px;
 	padding-top: 6px;
-	padding-left: 12px;
+	padding-left: 5px;
+	color: #CCC;
 }
 
 .flag {
-	background: url(../img/flagUK.jpg) center center no-repeat;
-	width: 60px;
-	height: 30px;
+	background: url(../img/flagUK.png) center center no-repeat;
+	width: 20px;
+	height: 14px;
 	margin-left: 7px;
 	margin-top:6px;
 }
@@ -117,13 +118,30 @@ header {
 .nav-collapse .nav>li:last-child>a, .nav-collapse .dropdown-menu a {
 	border-bottom:none;
 }
-.navbar-inner li:hover {
-	background: -webkit-gradient(linear, left top, left bottom, from(#093), to(#060));
-	background: -moz-linear-gradient(top,  #093,  #060);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009933', endColorstr='#006600');
-
+.brand {
+	margin-left: 20px !important;
+	border-right: 1px solid #333;
+	color:  #444 !important;
+	text-shadow: none;
 }
 
 /* END NAVBAR */
 
 
+#slider {
+	.center;
+	margin-top:10px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+#slider {
+	height:300px !important;
+}
+	
+}
+@media (max-width: 767px) {
+	#slider {
+	height:150px !important;
+	width:100% !important;
+}
+}

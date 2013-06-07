@@ -18,20 +18,31 @@
 		<div class="navbar-inner">
 				<div class="container">
 						<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						<a class="brand" href="index.php">Menu</a>
 						<div class="nav-collapse collapse" style="height: 0px;">
 								<ul class="nav">
 										<li class=""> <a href="#">Home</a> </li>
-										<li class=""> <a href="#">About</a> </li>
+										<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+      <li><a href="#">Company</a>
+	  <a href="#">Work</a>
+    </ul></li>
 										<li class=""> <a href="#">Contact</a> </li>
 								</ul>
+								      <div class="pull-right" id="language"> 
+      	<div class="flag"></div>
+		<p>Change Language</p>
+      
+      </div>
 						</div>
 				</div>
 		</div>
 </div>
 <?php include 'header.html' ?>
 
+
 <!--LayerSlider begin-->
-<div id="slider" style="width: 100%; height: 400px;">
+<div id="slider" style="width: 80%; height: 400px;">
  
     <!--LayerSlider layer-->
     <div class="ls-layer">
@@ -60,6 +71,7 @@
 </div>
 <!--LayerSlider end-->
 
+
 <!-- Scripts --> 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
@@ -77,9 +89,9 @@
     touchNav                : true,
     imgPreload              : true,
     navPrevNext             : true,
-    navStartStop            : true,
-    navButtons              : true,
-    skin                    : 'darkskin',
+    navStartStop            : false,
+    navButtons              : false,
+    skin                    : 'defaultskin',
     skinsPath               : 'css/skins/',
     pauseOnHover            : true,
     globalBGColor           : 'transparent',
