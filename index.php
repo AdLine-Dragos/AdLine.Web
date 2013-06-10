@@ -31,14 +31,15 @@
 </div>
 <!--LayerSlider end--> 
 
+<!-- Short INFO - WHAT WE DO -->
 <div class="container-fluid">
 	<div class="row-fluid spacing">
 		<div class="span12">
-			<h4>WHAT WE DO</h4>
+			<h4 class="red">WHAT WE DO</h4>
 			<div class="full-width-separator"></div>
 		</div>
 	</div>
-	<div class="row-fluid" id="wwd">
+	<div class="row-fluid shortInfo">
 		<div class="span3 pagination-centered">
 		<img src="assets/what_we_do.png">
 		<p>Build websites for you so that you can focus more on developing your business.</p>
@@ -56,10 +57,30 @@
 		<p>Deliver a professional, high-quality product that will help you overcome the competition.</p>
 		</div>
 	</div>
+	
+<!-- Short INFO - WHY US -->
 	<div class="row-fluid spacing">
 		<div class="span12">
-			<h4>WHY US</h4>
+			<h4 class="red">WHY US</h4>
 			<div class="full-width-separator"></div>
+		</div>
+	</div>
+	<div class="row-fluid shortInfo">
+		<div class="span3 pagination-centered">
+		<img src="assets/fast_service.png">
+		<p>We offer a fast service! Our aim is to deliver your website in less than 3 days whenever possible!</p>
+		</div>
+		<div class="span3  pagination-centered">
+		<img src="assets/no_headaches.png">
+		<p>Us taking care of everything means no headaches and more free time to enjoy for yourself.</p>
+		</div>
+		<div class="span3 pagination-centered">
+		<img src="assets/price-quality.png">
+		<p>We guarantee the best price/quality ratio on the market. You can easily afford a website that will make you stand out!</p>
+		</div>
+		<div class="span3 pagination-centered">
+		<img src="assets/communication.png">
+		<p>We consider a good communication with our customers one of our top priorities. You can always contact us!</p>
 		</div>
 	</div>
 </div>
