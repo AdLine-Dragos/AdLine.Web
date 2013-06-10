@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AdLine.Web - Choose your template and create your website!</title>
 
 <!-- StyleSheets -->
@@ -13,62 +14,55 @@
 
 <body>
 <!-- Main Body -->
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="brand" href="index.php">Menu</a>
-      <div class="nav-collapse collapse" style="height: 0px;">
-        <ul class="nav">
-          <li class=""> <a href="#">Home</a> </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Company</a> <a href="#">Work</a>
-            </ul>
-          </li>
-          <li class=""> <a href="#">Contact</a> </li>
-        </ul>
-        <div class="pull-right" id="language">
-          <div class="flag"></div>
-          <p>Change Language</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <?php include 'header.html' ?>
 
 <!--LayerSlider begin-->
 <div id="slider" style="width: 80%; height: 400px;"> 
-  
-  <!--LayerSlider layer-->
-  <div class="ls-layer"> 
-    
-    <!--LayerSlider background--> 
-    <img class="ls-bg" src="assets/Charity.jpg" alt="layer1-background"> 
-    
-    <!--LayerSlider sublayers-->
-	<!--<div class="ls-s3 bg_white caption" alt="layer1-sublayer1" style="left:80%; top:80%;">The New Charity Template</div>-->
-  
-  <!--LayerSlider layer-->
-  <div class="ls-layer"> 
-    
-    <!--LayerSlider background--> 
-    <img class="ls-bg" src="assets/Charity2.jpg" alt="layer1-background"> 
-    
-    <!--LayerSlider sublayers-->
-
+  <div class="ls-layer">  
+    <img class="ls-bg" src="assets/Charity.jpg" alt="layer1-background">
   </div>
-    <div class="ls-layer"> 
-    
-    <!--LayerSlider background--> 
+  <div class="ls-layer"> 
+    <img class="ls-bg" src="assets/Charity2.jpg" alt="layer1-background"> 
+  </div>
+  <div class="ls-layer"> 
     <img class="ls-bg" src="assets/Charity3.jpg" alt="layer1-background"> 
-    
-    <!--LayerSlider sublayers-->
-
   </div>
 </div>
 <!--LayerSlider end--> 
+
+<div class="container-fluid">
+	<div class="row-fluid spacing">
+		<div class="span12">
+			<h4>WHAT WE DO</h4>
+			<div class="full-width-separator"></div>
+		</div>
+	</div>
+	<div class="row-fluid" id="wwd">
+		<div class="span3 pagination-centered">
+		<img src="assets/what_we_do.png">
+		<p>Build websites for you so that you can focus more on developing your business.</p>
+		</div>
+		<div class="span3  pagination-centered">
+		<img src="assets/customize.png">
+		<p>Help you have a unique presence on the web by customizing your website. You won't have to move a finger!</p>
+		</div>
+		<div class="span3 pagination-centered">
+		<img src="assets/documentation2.png">
+		<p>Provide a thorough documentation, ensuring an easy maintenance process afterwards.</p>
+		</div>
+		<div class="span3 pagination-centered">
+		<img src="assets/prof_service.png">
+		<p>Deliver a professional, high-quality product that will help you overcome the competition.</p>
+		</div>
+	</div>
+	<div class="row-fluid spacing">
+		<div class="span12">
+			<h4>WHY US</h4>
+			<div class="full-width-separator"></div>
+		</div>
+	</div>
+</div>
 
 <!-- Scripts --> 
 
