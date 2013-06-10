@@ -22,7 +22,39 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Bree';
+    src: url('../assets/fonts/breeserif-regular-webfont.eot');
+    src: url('../assets/fonts/breeserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/breeserif-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/breeserif-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/breeserif-regular-webfont.svg#bree_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'Sanchez';
+    src: url('../assets/fonts/sanchez-regular-webfont.eot');
+    src: url('../assets/fonts/sanchez-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/sanchez-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/sanchez-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/sanchez-regular-webfont.svg#sanchezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../assets/fonts/lato-bol-webfont.eot');
+    src: url('../assets/fonts/lato-bol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/lato-bol-webfont.woff') format('woff'),
+         url('../assets/fonts/lato-bol-webfont.ttf') format('truetype'),
+         url('../assets/fonts/lato-bol-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* GENERAL */
 
 .clearfix:after {
@@ -57,12 +89,13 @@
 }
 
 h4 {
-	font-style: 'Montserrat-Bold';
+	font-family: 'Bree';
 	font-size: 22px;
 
 }
 h2 {
-	font-size: 16px;
+	font-family: 'Bree';
+	font-size: 20px;
 	font-weight: normal;
 }
 .caption {
@@ -93,8 +126,8 @@ margin-bottom:20px;
 
 body {
 	background: url(../img/subtlenet2.png) center center repeat;	
-	font-family: 'Montserrat-Regular';
-	font-size: 16px;
+	font-family: 'Sanchez';
+	font-size: 14px;
 }
 
 /* HEADER */
@@ -102,6 +135,10 @@ header {
 	margin-top:5px;	
 	margin-bottom: 5px;	
 }
+#logo {
+	margin-top: 70px;
+	margin-bottom:30px;
+	}
 
 #language {
 	background: url(../img/transparent.png) repeat;
@@ -135,9 +172,6 @@ header {
 
 /* NAVBAR */
 
-.navbar-fixed-top{
-	position: relative;
-}
 .nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a {
 	font-weight: normal;
 	border-bottom: 1px solid #333;
@@ -151,36 +185,30 @@ header {
 	border-right: 1px solid #333;
 	color:  #444 !important;
 	text-shadow: none;
+	font-family: 'Lato-Bold';
+font-size: 15px;
 }
+.nav a {
+font-family: 'Lato-Bold';
+font-size: 15px;
+text-transform: uppercase;
+}
+
 
 /* END NAVBAR */
 
 
-#slider {
-	.center;
-	margin-top:10px;
-	margin-bottom: 30px;
-	max-width:940px;
-}
-.slider_caption {
-	width:100%;
-	height:50px;
-	background-color: #000;
-	opacity:.3;
-}
 
 @media (min-width: 768px) and (max-width: 979px) {
-#slider {
-	height:300px !important;
-}
-	
+#logo {
+	margin-top: 0px;
+	}
 }
 @media (max-width: 767px) {
-	#slider {
-	height:150px !important;
-	width:100% !important;
-}
 
+#logo {
+	margin-top: 30px;
+}
 }
 
 
