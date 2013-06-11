@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 <title>AdLine.Web - Choose your template and create your website!</title>
 
 <!-- StyleSheets -->
@@ -21,6 +21,13 @@
   <li><img src="assets/Charity2.jpg" alt=""></li>
   <li><img src="assets/Charity3.jpg" alt=""></li>
 </ul>
+
+<div class="visible-phone mobile-image" id="caption">
+<span>
+<a href="#"><h3>Check out the Store</h3></a>
+</span>
+<img src="assets/youview.jpg">
+</div>
 
 <!-- Short INFO - WHAT WE DO -->
 <div class="container-fluid">
