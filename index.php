@@ -26,7 +26,7 @@
 <span>
 <a href="#"><h3>Check out the Store</h3></a>
 </span>
-<img class="lazy" src="img/transparent.gif" data-original="assets/youview.jpg" width="767" height="588">
+<img class="lazy" src="img/transparent.png" data-original="assets/youview.jpg" width="767" height="588">
 </div>
 
 <!-- Short INFO - WHAT WE DO -->
@@ -38,19 +38,19 @@
   </div>
 </div>
 <div class="row-fluid shortInfo clearfix">
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/what_we_do.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/what_we_do.png">
     <h2>Create websites</h2>
     <p>We create the websites for you so that you can focus more on developing your business.</p>
   </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/customize.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/customize.png">
     <h2>Customize them</h2>
     <p>Have a unique presence on the web by customizing your website. You will not have to move a finger!</p>
   </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/documentation2.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/documentation2.png">
     <h2>Document them</h2>
     <p>Provide a thorough documentation, ensuring an easy maintenance process afterwards.</p>
   </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/prof_service.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/prof_service.png">
     <h2>Deliver them</h2>
     <p>Deliver a professional, high-quality product that will help you overcome the competition.</p>
   </div>
@@ -96,19 +96,19 @@
   </div>
 </div>
 <div class="row-fluid shortInfo">
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/fast_service.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/fast_service.png">
     <h2>Fast-service</h2>
     <p>Our aim is to deliver your website, with your help, in less than 3 days, whenever possible!</p>
   </div>
-  <div class="span3  pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/no_headaches.png">
+  <div class="span3  pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/no_headaches.png">
     <h2>No headaches</h2>
     <p>Us taking care of everything means more free time to enjoy for yourself.</p>
   </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/price-quality.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/price-quality.png">
     <h2>Price/Quality</h2>
     <p>We guarantee the best price/quality ratio on the market. You can easily afford a website that will make you stand out!</p>
   </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.gif" width="122" height"105" data-original="assets/communication.png">
+  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="img/transparent.png" width="122" height"105" data-original="assets/communication.png">
     <h2>Great support</h2>
     <p>We consider a good communication with our customers the key to a successful collaboration.</p>
   </div>
@@ -145,6 +145,7 @@
     </ul>
   </div>
   <a class="buttons next" href="#">right</a> </div>
+  </div>
   </div>
 <?php include 'footer.html' ?>
 

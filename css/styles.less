@@ -270,6 +270,72 @@ border-bottom: 0 !important;
 	color:#f00;
 	text-decoration:none;
 }
+#facebook {
+	width: 24px;
+	height:24px;
+	background: url(../img/facebook.png) no-repeat 0 0;
+	display:inline-block;
+	animation: socialmediaOff .2s linear;
+	-webkit-animation: socialmediaOff .2s linear;
+	margin-left:10px;
+	
+}
+#facebook:hover {
+	background-position: 0 -24px;
+	animation: socialmediaOn .2s linear;
+	-webkit-animation: socialmediaOn .2s linear;
+
+}
+#twitter {
+	width: 24px;
+	height:24px;
+	background: url(../img/twitter.png) no-repeat 0 0;
+	display:inline-block;
+	animation: socialmediaOff .2s linear;
+	-webkit-animation: socialmediaOff .2s linear;
+}
+#twitter:hover {
+	background-position: 0 -24px;
+	animation: socialmediaOn .2s linear;
+	-webkit-animation: socialmediaOn .2s linear;
+
+}
+#linkedin {
+	width: 24px;
+	height:24px;
+	background: url(../img/linkedin.png) no-repeat 0 0;
+	display:inline-block;
+	animation: socialmediaOff .2s linear;
+	-webkit-animation: socialmediaOff .2s linear;
+}
+#linkedin:hover {
+	background-position: 0 -24px;
+	animation: socialmediaOn .2s linear;
+	-webkit-animation: socialmediaOn .2s linear;
+}
+
+@keyframes socialmediaOn
+{
+from {background-position: 0 0}
+to {background-position: 0 -24px}
+}
+
+@-webkit-keyframes socialmediaOn /* Safari and Chrome */
+{
+from {background-position: 0 0}
+to {background-position: 0 -24px}
+}
+@keyframes socialmediaOff
+{
+from {background-position: 0 -24px}
+to {background-position: 0 0}
+}
+
+@-webkit-keyframes socialmediaOff /* Safari and Chrome */
+{
+from {background-position: 0 -24px}
+to {background-position: 0 0}
+}
 
 /* END SHORT INFO SECTIONS */	
 	
