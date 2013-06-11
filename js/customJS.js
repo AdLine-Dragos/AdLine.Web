@@ -44,12 +44,4 @@ fixSlide();
 
 
 
-var span_width = $('#caption span').outerWidth();
-
-$('#caption span').css('margin-left', span_width/-2 - 45 + "px");
-
-
-
-
-
 });
