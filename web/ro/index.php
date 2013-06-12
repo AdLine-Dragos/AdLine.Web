@@ -10,9 +10,28 @@
 <link href="../base/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../base/css/responsiveslides.css" type="text/css">
 <link rel="stylesheet/less" type="text/css" href="../base/css/styles.less" />
+<style>
+#company_title {
+	width:660px;
+
+}
+.front h2 {
+	margin-left: -94px;
+}
+#aboutflip1 .backcontainer h2{
+	padding-top:15px;
+	margin-bottom:0px;
+}
+@media (max-width: 767px) {
+	#company_title {
+	width:390px;
+
+}
+}
+</style>
 </head>
 
-<body data-spy="scroll" data-offset="160" data-target=".navbar">
+<body data-spy="scroll" data-offset="200" data-target=".navbar">
 <!-- Main Body -->
 
 <?php include 'header.html' ?>
@@ -150,11 +169,101 @@
 <!---------------------------------------    ABOUT THE COMPANY    ---------------------------------------->
 
 <div id="about_company_container" >
-
+  <h3 id="company_title" class="white">DESPRE COMPANIE</h3>
+  <div id="company_holder" class="hidden-phone">
+    <div id="company_mainpic"></div>
+    <div id="aboutflip1" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap<br>
+             pentru a intoarce</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Suntem la inceput</h2>
+            <div class="aboutsep"></div>
+            <p>Ne-am deschis recent portile si suntem motivati sa producem  pentru voi o multile de design-uri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip2" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap<br>
+             pentru a intoarce</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Locatie</h2>
+            <div class="aboutsep"></div>
+            <p>Avem biroul in Craiova, dar lucram la extinderea pe viitor si in alte orase, chiar alte tari.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip3" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap<br>
+             pentru a intoarce</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Nu doar Site-uri</h2>
+            <div class="aboutsep"></div>
+            <p>Scopul nostru este sa ne dezvoltam si in printare, aplicatii iOS/Android si grafica computerizata.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip4" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap<br>
+             pentru a intoarce</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Echipa</h2>
+            <div class="aboutsep"></div>
+            <p>Suntem un grup de tineri pana in 25 de ani, plini de idei si entuziasm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="mobile-about-company" class=" visible-phone pagination-centered container-fluid">
+  	<div class="row-fluid mobile-circle">
+    <img class="lazy" src="../base/img/transparent.png" width="210" height"83" data-original="../base/assets/blue-smaller.png">
+    </div>
+    <div class="row-fluid">
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Suntem la inceput</h2>
+        <p class="white">Ne-am deschis recent portile si suntem motivati sa producem pentru voi o multile de design-uri.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Locatie</h2>
+        <p class="white">Avem biroul in Craiova, dar lucram la extinderea pe viitor si in alte orase, chiar alte tari.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Nu doar Site-uri</h2>
+        <p class="white">Scopul nostru este sa ne integram si in industrii precum printarea, aplicatii iOS/Android si grafica computerizata.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Echipa</h2>
+        <p class="white">Suntem un grup de tineri pana in 25 de ani, plini de idei si entuziasm.</p>
+        </div>
+    </div>
+  </div>  
 </div>
 
-
 <?php include 'footer.html' ?>
+
+<p id="back-top" alt="Back to Top">
+	<a href="#home"><span></span></a>
+</p>
 
 <!-- Scripts --> 
 

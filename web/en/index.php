@@ -147,18 +147,106 @@
   </div>
 </div>
 
-<!--------------------------------------------   END HOME    ---------------------------------------->
-
-
+<!--------------------------------------------   END HOME    ----------------------------------------> 
 
 <!---------------------------------------    ABOUT THE COMPANY    ---------------------------------------->
 
-
-<div id="about_company_container" >
-
+<div id="about_company_container">
+  <h3 id="company_title" class="white">THE COMPANY</h3>
+  <div id="company_holder" class="hidden-phone">
+    <div id="company_mainpic"></div>
+    <div id="aboutflip1" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap to<br>
+            find out</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>We are new</h2>
+            <div class="aboutsep"></div>
+            <p>We have just opened our gates recently, but we are eager to start producing tons of cool designs for you to use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip2" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap to<br>
+            find out</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Location</h2>
+            <div class="aboutsep"></div>
+            <p>We are based in Craiova, Romania but we are hoping to expand in many other cities and countries around the globe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip3" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap to<br>
+            find out</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Not only Web</h2>
+            <div class="aboutsep"></div>
+            <p>The company aims to extend into fields like print, mobile and motion graphics in the near future.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutflip4" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="white">Hover/Tap to<br>
+            find out</h2>
+        </div>
+        <div class="back">
+          <div class="backcontainer">
+            <h2>Our Team</h2>
+            <div class="aboutsep"></div>
+            <p>We are a group of young individuals, endowed with fresh ideas for your projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="mobile-about-company" class=" visible-phone pagination-centered container-fluid">
+  	<div class="row-fluid mobile-circle">
+    <img class="lazy" src="../base/img/transparent.png" width="210" height"83" data-original="../base/assets/blue-smaller.png">
+    </div>
+    <div class="row-fluid">
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">We are new</h2>
+        <p class="white">We have just opened our gates recently, but we are eager to start producing tons of cool designs for you to use.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Location</h2>
+        <p class="white">We are based in Craiova, Romania but we are hoping to expand in many other cities and countries around the globe.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Not only Web</h2>
+        <p class="white">The company aims to extend into fields like print, mobile and motion graphics in the near future.</p>
+        </div>
+    	<div class="mobile-about-info clearfix">
+        <h2 class="white">Our Team</h2>
+        <p class="white">We are a group of young individuals, endowed with fresh ideas for your projects.</p>
+        </div>
+    </div>
+  </div>  
 </div>
 
 <?php include 'footer.html' ?>
+
+<p id="back-top" alt="Back to Top">
+	<a href="#home"><span></span></a>
+</p>
 
 <!-- Scripts --> 
 
@@ -201,6 +289,5 @@ $(".rslides").responsiveSlides({
 		});
     });
 </script>
-
 </body>
 </html>

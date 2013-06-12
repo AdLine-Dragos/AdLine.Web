@@ -42,12 +42,33 @@ function fixSlide() {
 fixSlide();	
 });
 
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1200,'easeInOutCubic');
+			return false;
+		});
+	});
+
 });
 
 
-$('.navbar ul li a').bind('click', function(e) {
-   
-   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 'EaseOutQuad');
+$('.navbar ul li a').not($('.lang ul li a')).bind('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1200,'easeInOutCubic');
 
    // edit: Opera requires the "html" elm. animated
 });

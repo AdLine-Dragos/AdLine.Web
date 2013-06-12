@@ -121,6 +121,16 @@ margin-bottom:20px;
 .red {
 	color:#BC1B26;
 	}
+#back-top {
+	position: fixed;
+	bottom: 10px;
+	right:10px;
+	width:30px;
+	height:30px;
+	background: url(../img/toTop.png) center center no-repeat;
+	display:block;
+	cursor:pointer;
+}
 
 /* END GENERAL */
 
@@ -251,7 +261,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
 	border-radius: 5px;
 	background-color: #DADADA;
 	}
-	
+.shortInfo h2 {
+	line-height:20px;
+}
 .mobile-wwd { height: 270px; overflow:hidden; }
 .mobile-wwd  .viewport { float: left; width: 200px; height: 270px; overflow: hidden; position: relative; }
 .mobile-wwd  .buttons { background:url("../img/skin.png") no-repeat scroll 0 0 transparent; display: block; margin: 80px 10px 0 0;background-position: 0 -50px; text-indent: -999em; float: left; width: 18px; height: 50px; overflow: hidden; position: relative; }
@@ -305,12 +317,203 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
 
 #about_company_container {
 	width:100%;
-	height: 800px;
-	background-color:#2ECDD6;	
+	height: auto;
+	background-color:#2185c6;	
 	margin-top:80px;
 }
+#company_title {
+	font-family:'Montserrat-Bold';
+	font-size: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	width: 500px;
+	letter-spacing:-7px;
+	word-spacing: 5px;
+}
+#company_holder {
+	max-width:1423px;
+	width:100%;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+#company_mainpic {
+	width: 967px;
+	height: 636px;
+	margin-left:auto;
+	margin-right:auto;
+	background: url(../assets/about_holder.png) center center no-repeat;
+}
+/* entire container, keeps perspective */
+#aboutflip1{
+	position:absolute;
+	top:10px;
+	left:50px;
+}
+#aboutflip1 .front,#aboutflip1 .back{
+	background-color:#A9CF54;
+}
+#aboutflip2{
+	position:absolute;
+	bottom:40px;
+	left:200px;
+}
+#aboutflip2 .front,#aboutflip2 .back{
+	background-color:#ff7f66;
+}
+#aboutflip3{
+	position:absolute;
+	top:10px;
+	right:140px;
+}
+#aboutflip3 .front,#aboutflip3 .back{
+	background-color:#105B63;
+}
+#aboutflip4{
+	position:absolute;
+	bottom:30px;
+	right:260px;
+}
+#aboutflip4 .front,#aboutflip4 .back{
+	background-color:#BD4932;
+}
+.flip-container {
+	perspective: 1000;
+	-moz-transform: perspective(1000px);
+	-webkit-perspective: 1000;
+	-o-perspective: 1000;
+	-ms-perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .back, .flip-container.hover .back {
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+	}
+	.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	}
 
+.flip-container, .front, .back {
+	width: 234px;
+	height: 234px;
+}
+
+/* flip speed goes here */
+.flipper {
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	  -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+ -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+   transition: 0.6s;
+    transform-style: preserve-3d;
+	width: 234px;
+	height:234px;
+	border-radius:50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	background:url(../assets/flipped.png) center center no-repeat;
+-webkit-transform: translate3d(0, 0, 0);
+
+
+}
+.front h2 {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left: -72px;
+	margin-top:-25px;
+	line-height:25px;
+	text-align:center;
+	font-size: 24px;
+}
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+		-webkit-transform: rotateY(-180deg);
+		-o-transform: rotateY(-180deg);
+		-ms-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-180deg);
+	background:url(../assets/flipper.png) center center no-repeat;
+}
+.back .backcontainer {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left: -100px;
+	margin-top:-100px;
+	line-height:25px;
+	text-align:center;
+	font-size: 24px;
+	width:200px;
+	height:200px;
+}
+.aboutsep {
+	width:143px;
+	height:15px;
+	background:url(../assets/aboutsep.png) center center repeat-x;
+	margin-left:auto;
+	margin-right:auto;
+}
+.backcontainer p{
+	font-family:'Sanchez';
+	font-size:14px;
+	padding:10px;
+	line-height:20px;
+}
+.mobile-circle {
+	border-radius:50%;
+	background-color:#fff;
+	width:220px;
+	height:220px;
+	margin:20px auto;
+}
+.mobile-circle img{
+	margin-left:2px;
+	margin-top:61px;
+}
+.mobile-about-info {
+	width:80%;
+	margin: 10px auto 0 auto;
+	border: 1px dashed #fff;
+	border-radius: 5px;
+	background-color: #1074b5;
+	box-shadow: inset 0px 5px 4px #004181;
+}
+.mobile-about-info:nth-child(4) {
+	margin-bottom:40px;
+}
 /* FOOTER */
+
 #facebook {
 	width: 24px;
 	height:24px;
@@ -387,6 +590,41 @@ to {background-position: 0 0}
 #logo {
 	margin-top: 0px;
 }
+#company_title {
+	font-family:'Montserrat-Bold';
+	font-size: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	width: 500px;
+	letter-spacing:-7px;
+	word-spacing: 5px;
+}
+#company_mainpic {
+	width: 571px;
+	height: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 30px;
+	margin-bottom:30px;
+	background: url(../assets/about_holder_smaller.png) center center no-repeat;
+}
+
+#aboutflip2{
+	position:absolute;
+	bottom:10px;
+	left:4%;
+}
+#aboutflip3{
+	position:absolute;
+	top:40px;
+	right:2%;
+}
+#aboutflip4{
+	position:absolute;
+	bottom:40px;
+	right:3%;
+}
 }
 
 @media (max-width: 767px) {
@@ -402,6 +640,55 @@ text-align:center;
 	margin-right:30px;
 	margin-top:40px;
 }
+#company_title {
+	font-size: 42px;
+	padding-top:40px;	
+	width:300px;
+	letter-spacing: -4px;
+}
 
-
+}
+@media (min-width: 1150px) and (max-width: 1280px) {
+#aboutflip1{
+	position:absolute;
+	top:10px;
+	left:50px;
+}
+#aboutflip2{
+	position:absolute;
+	bottom:40px;
+	left:140px;
+}
+#aboutflip3{
+	position:absolute;
+	top:10px;
+	right:140px;
+}
+#aboutflip4{
+	position:absolute;
+	bottom:30px;
+	right:180px;
+}
+}
+@media (min-width: 980px) and (max-width: 1150px) {
+#aboutflip1{
+	position:absolute;
+	top:80px;
+	left:1%;
+}
+#aboutflip2{
+	position:absolute;
+	bottom:40px;
+	left:70px;
+}
+#aboutflip3{
+	position:absolute;
+	top:10px;
+	right:3%;
+}
+#aboutflip4{
+	position:absolute;
+	bottom:30px;
+	right:8%;
+}
 }
