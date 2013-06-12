@@ -42,6 +42,12 @@ function fixSlide() {
 fixSlide();	
 });
 
+});
 
 
+$('.navbar ul li a').bind('click', function(e) {
+   
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 'EaseOutQuad');
+
+   // edit: Opera requires the "html" elm. animated
 });

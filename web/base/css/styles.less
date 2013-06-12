@@ -211,6 +211,25 @@ border-bottom: 0 !important;
 .navbar .btn {
 	margin-top: 15px;
 }
+.active a{
+	height:26px;
+	margin-top:-10px;
+	padding-top: 20px !important;
+	box-shadow:none !important;
+}
+
+
+.dropdown-menu li a:hover {
+       background: #ff3019; /* Old browsers */
+background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+        color: white;
+      }
 
 /* END NAVBAR */
 
@@ -278,6 +297,20 @@ border-bottom: 0 !important;
 	color:#f00;
 	text-decoration:none;
 }
+
+/* END SHORT INFO SECTIONS */
+
+
+/* ABOUT THE COMPANY */
+
+#about_company_container {
+	width:100%;
+	height: 800px;
+	background-color:#2ECDD6;	
+	margin-top:80px;
+}
+
+/* FOOTER */
 #facebook {
 	width: 24px;
 	height:24px;
@@ -345,7 +378,10 @@ from {background-position: 0 -24px}
 to {background-position: 0 0}
 }
 
-/* END SHORT INFO SECTIONS */	
+/* END FOOTER */	
+
+
+/* MEDIA QUERIES */
 	
 @media (min-width: 768px) and (max-width: 979px) {
 #logo {

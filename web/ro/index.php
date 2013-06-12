@@ -12,7 +12,7 @@
 <link rel="stylesheet/less" type="text/css" href="../base/css/styles.less" />
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="160" data-target=".navbar">
 <!-- Main Body -->
 
 <?php include 'header.html' ?>
@@ -21,132 +21,139 @@
   <li><img src="../base/assets/Charity2.jpg" alt=""></li>
   <li><img src="../base/assets/Charity3.jpg" alt=""></li>
 </ul>
-
-<div class="visible-phone mobile-image" id="caption">
-<span>
-<a href="#"><h3>Intra in magazin!</h3></a>
-</span>
-<img class="lazy" src="../base/img/transparent.png" data-original="../base/assets/youview.jpg" width="767" height="588">
-</div>
+<div class="visible-phone mobile-image" id="caption"> <span> <a href="#">
+  <h3>Intra in magazin!</h3>
+  </a> </span> <img class="lazy" src="../base/img/transparent.png" data-original="../base/assets/youview.jpg" width="767" height="588"> </div>
 
 <!-- Short INFO - WHAT WE DO -->
 <div class="container-fluid">
-<div class="row-fluid spacing">
-  <div class="span12">
-    <h4 class="red sectionTitle">CE FACEM</h4>
-    <div class="full-width-separator"></div>
+  <div class="row-fluid spacing">
+    <div class="span12">
+      <h4 class="red sectionTitle">CE FACEM</h4>
+      <div class="full-width-separator"></div>
+    </div>
+  </div>
+  <div class="row-fluid shortInfo clearfix">
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/what_we_do.png">
+      <h2>Cream Site-uri</h2>
+      <p>Noi construim site-urile in locul tau pentru ca tu sa te poti concentra pe dezvoltarea afacerii tale.</p>
+    </div>
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/customize.png">
+      <h2>Le personalizam</h2>
+      <p>Ne ocupam de personalizarea site-ului, iar tu nu va trebui sa misti un deget!</p>
+    </div>
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/documentation2.png">
+      <h2>Te invatam</h2>
+      <p>Iti oferim o documentatie amanuntita, facand actualizarea mai usoara.</p>
+    </div>
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/prof_service.png">
+      <h2>Ti-l trimitem</h2>
+      <p>Iti trimitem un produs final profesional si de calitate ridicata.</p>
+    </div>
+  </div>
+  <div id="slider1Holder">
+    <div id="slider1" class="mobile-wwd"> <a class="buttons prev" href="#">stanga</a>
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/what_we_do.png">
+              <h2>Cream Site-uri</h2>
+              <p>Noi construim site-urile in locul tau pentru ca tu sa te poti concentra pe dezvoltarea afacerii tale.</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/customize.png">
+              <h2>Le personalizam</h2>
+              <p>Ne ocupam de personalizarea site-ului, iar tu nu va trebui sa misti un deget!</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/documentation2.png">
+              <h2>Te invatam</h2>
+              <p>Iti oferim o documentatie amanuntita, facand actualizarea mai usoara.</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/prof_service.png">
+              <h2>Ti-l trimitem</h2>
+              <p>Iti trimitem un produs final profesional si de calitate ridicata.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="buttons next" href="#">dreapta</a> </div>
+  </div>
+  
+  <!-- Short INFO - WHY US -->
+  <div class="row-fluid spacing clearfix">
+    <div class="span12">
+      <h4 class="red sectionTitle">AVANTAJELE NOASTRE</h4>
+      <div class="full-width-separator"></div>
+    </div>
+  </div>
+  <div class="row-fluid shortInfo">
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/fast_service.png">
+      <h2>Serviciu rapid</h2>
+      <p>Obiectivul nostru este sa livram site-ul in maximum 3 zile, cu putin ajutor din partea ta.</p>
+    </div>
+    <div class="span3  pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/no_headaches.png">
+      <h2>Timp liber</h2>
+      <p>Iti oferim mai mult timp liber ocupandu-ne de totul in locul tau.</p>
+    </div>
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/price-quality.png">
+      <h2>Pret/Calitate</h2>
+      <p>Garantam cel mai bun raport calitate/pret de pe piata. </p>
+    </div>
+    <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/communication.png">
+      <h2>Suport deosebit</h2>
+      <p>Consideram comunicarea cu clientul cheia unei bune colaborari, asa ca punem accent pe suportul pe care il oferim.</p>
+    </div>
+    </di>
+  </div>
+  <div id="slider2Holder">
+    <div id="slider2" class="mobile-wwd"> <a class="buttons prev" href="#">stanga</a>
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/fast_service.png">
+              <h2>Serviciu rapid</h2>
+              <p>Obiectivul nostru este sa livram site-ul in maximum 3 zile, cu putin ajutor din partea ta.</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/no_headaches.png">
+              <h2>Timp liber</h2>
+              <p>Iti oferim mai mult timp liber ocupandu-ne de totul in locul tau.</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/price-quality.png">
+              <h2>Pret/Calitate</h2>
+              <p>Garantam cel mai bun raport calitate/pret de pe piata.</p>
+            </div>
+          </li>
+          <li>
+            <div class="pagination-centered"> <img src="../base/assets/communication.png">
+              <h2>Suport deosebit</h2>
+              <p>Consideram comunicarea cu clientul cheia unei bune colaborari, asa ca punem accent pe suportul pe care il oferim.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="buttons next" href="#">dreapta</a> </div>
   </div>
 </div>
-<div class="row-fluid shortInfo clearfix">
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/what_we_do.png">
-    <h2>Cream Site-uri</h2>
-    <p>Noi construim site-urile in locul tau pentru ca tu sa te poti concentra pe dezvoltarea afacerii tale.</p>
-  </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/customize.png">
-    <h2>Le personalizam</h2>
-    <p>Ne ocupam de personalizarea site-ului, iar tu nu va trebui sa misti un deget!</p>
-  </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/documentation2.png">
-    <h2>Te invatam</h2>
-    <p>Iti oferim o documentatie amanuntita, facand actualizarea mai usoara.</p>
-  </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/prof_service.png">
-    <h2>Ti-l trimitem</h2>
-    <p>Iti trimitem un produs final profesional si de calitate ridicata.</p>
-  </div>
-</div>
-<div id="slider1Holder">
-<div id="slider1" class="mobile-wwd"> <a class="buttons prev" href="#">stanga</a>
-  <div class="viewport">
-    <ul class="overview">
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/what_we_do.png">
-          <h2>Cream Site-uri</h2>
-          <p>Noi construim site-urile in locul tau pentru ca tu sa te poti concentra pe dezvoltarea afacerii tale.</p>
-        </div>
-      </li>
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/customize.png">
-          <h2>Le personalizam</h2>
-          <p>Ne ocupam de personalizarea site-ului, iar tu nu va trebui sa misti un deget!</p>
-        </div>
-      </li>
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/documentation2.png">
-          <h2>Te invatam</h2>
-          <p>Iti oferim o documentatie amanuntita, facand actualizarea mai usoara.</p>
-        </div>
-      </li>
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/prof_service.png">
-          <h2>Ti-l trimitem</h2>
-          <p>Iti trimitem un produs final profesional si de calitate ridicata.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <a class="buttons next" href="#">dreapta</a> </div>
-  </div>
 
-<!-- Short INFO - WHY US -->
-<div class="row-fluid spacing clearfix">
-  <div class="span12">
-    <h4 class="red sectionTitle">AVANTAJELE NOASTRE</h4>
-    <div class="full-width-separator"></div>
-  </div>
+
+<!--------------------------------------------   END HOME    ----------------------------------------> 
+
+<!---------------------------------------    ABOUT THE COMPANY    ---------------------------------------->
+
+<div id="about_company_container" >
+
 </div>
-<div class="row-fluid shortInfo">
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/fast_service.png">
-    <h2>Serviciu rapid</h2>
-    <p>Obiectivul nostru este sa livram site-ul in maximum 3 zile, cu putin ajutor din partea ta.</p>
-  </div>
-  <div class="span3  pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/no_headaches.png">
-    <h2>Timp liber</h2>
-    <p>Iti oferim mai mult timp liber ocupandu-ne de totul in locul tau.</p>
-  </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/price-quality.png">
-    <h2>Pret/Calitate</h2>
-    <p>Garantam cel mai bun raport calitate/pret de pe piata. </p>
-  </div>
-  <div class="span3 pagination-centered clearfix"> <img class="lazy" src="../base/img/transparent.png" width="122" height"105" data-original="../base/assets/communication.png">
-    <h2>Suport deosebit</h2>
-    <p>Consideram comunicarea cu clientul cheia unei bune colaborari, asa ca punem accent pe suportul pe care il oferim.</p>
-  </div>
-  </di>
-</div>
-<div id="slider2Holder">
-<div id="slider2" class="mobile-wwd"> <a class="buttons prev" href="#">stanga</a>
-  <div class="viewport">
-    <ul class="overview">
-      <li>
-         <div class="pagination-centered"> <img src="../base/assets/fast_service.png">
-    <h2>Serviciu rapid</h2>
-    <p>Obiectivul nostru este sa livram site-ul in maximum 3 zile, cu putin ajutor din partea ta.</p>
-  </div>
-      </li>
-      <li>
-       <div class="pagination-centered"> <img src="../base/assets/no_headaches.png">
-    <h2>Timp liber</h2>
-    <p>Iti oferim mai mult timp liber ocupandu-ne de totul in locul tau.</p>
-  </div>
-      </li>
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/price-quality.png">
-    <h2>Pret/Calitate</h2>
-    <p>Garantam cel mai bun raport calitate/pret de pe piata.</p>
-  </div>
-      </li>
-      <li>
-        <div class="pagination-centered"> <img src="../base/assets/communication.png">
-    <h2>Suport deosebit</h2>
-    <p>Consideram comunicarea cu clientul cheia unei bune colaborari, asa ca punem accent pe suportul pe care il oferim.</p>
-  </div>
-      </li>
-    </ul>
-  </div>
-  <a class="buttons next" href="#">dreapta</a> </div>
-  </div>
-  </div>
+
+
 <?php include 'footer.html' ?>
 
 <!-- Scripts --> 
@@ -158,7 +165,7 @@
 <script src="../base/js/responsiveslides.min.js" type="text/javascript"></script> 
 <script src="../base/js/less-1.3.3.min.js" type="text/javascript"></script> 
 <script src="../base/js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="../base/js/jquery.lazyload.min.js"></script>
+<script src="../base/js/jquery.lazyload.min.js"></script> 
 <script src="../base/js/customJS.js" type="text/javascript"></script> 
 <script>
 $(".rslides").responsiveSlides({
