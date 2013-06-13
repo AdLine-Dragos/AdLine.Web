@@ -62,6 +62,8 @@ fixSlide();
 			return false;
 		});
 	});
+	
+	
 
 });
 
@@ -72,3 +74,4 @@ $('.navbar ul li a').not($('.lang ul li a')).bind('click', function(e) {
 
    // edit: Opera requires the "html" elm. animated
 });
+
