@@ -1,3 +1,13 @@
+<?php
+if(isset($_COOKIE["warningmsg"])) {
+$warning_exists = true;
+}
+else {
+  $warning_exists = false;
+  $expire=time()+60*60*24*30*12;
+  setcookie("warningmsg", "warning", $expire);
+}
+?>
 <!doctype html>
 <html>
 <head>
@@ -5,17 +15,28 @@
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 <title>AdLine.Web - Alege-ti design-ul si creeaza-ti propriul website!</title>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="../base/js/html5shiv.js" type="text/html"></script>
+
 <!-- StyleSheets -->
 <link href="../base/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../base/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../base/css/responsiveslides.css" type="text/css">
 <link rel="stylesheet/less" type="text/css" href="../base/css/styles.less" />
+<link rel="stylesheet" type="text/css" href="../base/css/animate-custom.css">
+<link rel="stylesheet" type="text/css" href="../base/css/jquery.bxslider.css">
 <!--[if lte IE 9]>
 	<style>
     	.front {display:none;}
         </style>
 <![endif]-->
 <style>
+@media (max-width: 767px) {
+
+#company_title {
+  width:300px !important;
+}
+}
 #company_title {
 	width: 660px;
 }
@@ -26,22 +47,27 @@
 	padding-top: 15px;
 	margin-bottom: 0px;
 }
-@media (max-width: 767px) {
-#company_title {
-	width: 300px;
-}
-}
+
+
 </style>
 </head>
 
 <body data-spy="scroll" data-offset="200" data-target=".navbar">
+  <?php
+if($warning_exists == false) {
+    echo '<div class="alert alert-error animated fadeInUp" id="browser-alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Avertisment!</strong><br>Adline incurajeaza si promoveaza noile tehnologii. De aceea, am decis sa nu oferim suport pentru Internet Explorer 8 sau mai mic. Pentru cea mai buna experienta, folositi Google Chrome sau Mozilla Firefox. Navigare placuta!
+  </div>';
+}
+?>
 <!-- Main Body -->
 
 <?php include 'header.html' ?>
 <!-- Link catre magazin - Mobile --><div class="visible-phone mobile-image" id="caption"> <span> <a href="#">
   <h3>Intra in magazin!</h3>
   </a> </span> <img class="lazy" src="../base/img/transparent.png" data-original="../base/assets/youview.jpg" width="767" height="588"> </div>
-<div class="container-fluid">
+<section class="container-fluid">
 	<div class="row-fluid">
     	<div class="span12 marginTop">
       		<h4 class="red sectionTitle">CE OFERIM</h4>
@@ -57,12 +83,12 @@
         </div>
     </div>
     <div class="full-width-separator marginTop"></div>
-</div>
+</section>
           
 
 
 <!-- Short INFO - WHAT WE DO -->
-<div class="container-fluid">
+<section class="container-fluid">
   <div class="row-fluid">
     <div class="span12  marginTop">
 
@@ -124,13 +150,13 @@
     </div>
     
   </div>
-</div>
+</section>
 
 <!--------------------------------------------   END HOME    ----------------------------------------> 
 
 <!---------------------------------------    ABOUT THE COMPANY    ---------------------------------------->
 
-<div id="about_company_container" >
+<section id="about_company_container" >
   <h3 id="company_title" class="white">DESPRE COMPANIE</h3>
   <div id="company_holder" class="hidden-phone">
     <div id="company_mainpic"></div>
@@ -216,54 +242,85 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- WORK SLIDER -->
-<div id="work-slider">
+<section id="work-slider">
 	<h3 id="work_title">LUCRARI</h3>
-	<div class="banner">
-    <ul>
-        <li><img src="../base/assets/work1.png"></li>
-        <li><img src="../base/assets/word2.png"></li>
-        <li><img src="../base/assets/work3.png"></li>
-    </ul>
-</div>
-</div>
+<ul class="bxslider">
+  <li><img src="../base/assets/work1.png" /></li>
+  <li><img src="../base/assets/word2.png" /></li>
+  <li><img src="../base/assets/work3.png" /></li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact_section">
+
+  <div class="container-fluid">
+    <h3 id="contact_title" class="white">CONTACT</h3>
+    <div class="row-fluid">
+
+
+      <div class="span6 hidden-phone">
+        <h2 class="white title_formInfo">Scrie-ne cateva cuvinte!</h2>
+        <p class="white para_formInfo">Daca ca ai nevoie de serviciile noastre pentru un proiect nou, sau vrei doar sa ne saluti, nu ezita sa folosesti formularul de contact!</p>
+        <h2 class="white title_formInfo">Retele Sociale</h2>
+        <p class="white para_formInfo">Suntem activi pe multe retele sociale, iar daca vrei sa afli noutatile cat mai rapid, ne poti urmari pe oricare dintre ele.</p>
+        <div id="socialnetworks">
+          <div class="soc_net_ico">
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/twitter-128.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/linkedin-128.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/behance-128.png"></a>
+            
+          </div>
+        </div>
+      </div>
+            
+      <div class="span6" id="form_div">
+        <form action="../base/sendform.php" id="contact_form" method="get" onsubmit="return false">
+          <input name="name" type="text" id="form_name" placeholder="Nume"></input>
+          <input name="email" type="text" id="form_email" placeholder="Email"></input>
+          <textarea name="message" id="form_message" placeholder="Mesaj"></textarea>
+          <div id="form_errorbox"></div>
+          <div class="loading"></div>
+          <button type="submit" id="form_button">Trimite mesajul!</button>
+        </form>
+      </div>
+      <div class="span6 visible-phone">
+<div id="socialnetworks">
+          <div class="soc_net_ico">
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/twitter-128.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/linkedin-128.png"></a>
+             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/behance-128.png"></a>
+            
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
 <?php include 'footer.html' ?>
 <p id="back-top" alt="Back to Top"> <a href="#home"><span></span></a> </p>
 
 <!-- Scripts --> 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+
 <script src="../base/js/jquery.tinycarousel.min.js" type="text/javascript"></script> 
 <script src="../base/js/jquery-easing-1.3.js" type="text/javascript"></script> 
 <script src="../base/js/less-1.3.3.min.js" type="text/javascript"></script> 
 <script src="../base/js/bootstrap.min.js" type="text/javascript"></script> 
 <script src="../base/js/jquery.lazyload.min.js"></script> 
+<script src="../base/js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="../base/js/jquery.fitvids" type="text/javascript"></script>
 <script src="../base/js/customJS.js" type="text/javascript"></script> 
-<script src="../base/js/unslider.min.js"></script>
-<script src="../base/js/jquery.event.swipe.js"></script>
-
-<script>
-    $(function(){
-		$('#slider1').tinycarousel();
-					  
-        $("img.lazy").lazyload({
-			threshold: 150,
-			effect : "fadeIn"
-		});
-		
-		$('.banner').unslider({
-			fluid: true,
-			dots:true,
-			delay:false,
-			speed: 1000
-			
-		});
-    });
-</script>
 
 </body>
 </html>
