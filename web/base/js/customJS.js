@@ -330,6 +330,29 @@ function checkLanguage(textRO, textEN) {
 
 /* ]]> */
 
+// LOGIN FORM
+
+$('#login_wrapper').show();
+$('#signup_form').hide();
+$('#login_wrapper').addClass('animated fadeInDown');
+
+$('#login_tabs_signup').click(function() {
+    $(this).removeClass('login_tab_inactive');
+    $('#login_tabs_login').addClass('login_tab_inactive');
+    $('#login_form').hide('fade',function(){
+        $('#signup_form').show('fade');
+    });
+
+});
+$('#login_tabs_login').click(function() {
+    $(this).removeClass('login_tab_inactive');
+    $('#login_tabs_signup').addClass('login_tab_inactive');
+    $('#signup_form').hide('fade', function(){
+        $('#login_form').show('fade');
+    });
+
+});
+
 
 // INITIALIZATION ON DOC READY
 
@@ -349,9 +372,35 @@ function checkLanguage(textRO, textEN) {
 });
 
 
-$('.navbar ul li a').not($('.lang ul li a')).bind('click', function(e) {
+$('.navbar ul li a').not($('#language-bar, #user-buttons div a')).bind('click', function(e) {
    e.preventDefault();
    $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1200,'easeInOutCubic');
 
    // edit: Opera requires the "html" elm. animated
+});
+
+
+//Wait for the animation to finish and then switch to login
+$('#user-buttons a').click(function() {
+    var clickedAnchor = $(this).attr('href');
+    $('body').hide('fade', 500, function() {
+        location.href = clickedAnchor;
+    });
+    $('#login_wrapper').hide();
+    return false;
+});
+
+
+//Wait for the animation to finish and then switch to index
+$('#login-home-link').click(function() {
+    var clickedAnchor = $(this).attr('href');
+    var logWrap = $('#login_wrapper');
+    logWrap.removeClass('fadeInDown');;
+    logWrap.addClass('fadeOutUp').bind('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e){
+    
+    location.href= clickedAnchor;
+
+});
+
+    return false;
 });

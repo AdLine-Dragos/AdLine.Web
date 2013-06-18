@@ -205,6 +205,19 @@ header {
 	display:inline-block;
 	margin-right: 10px;
 }
+#user-buttons {
+	padding-top:0;
+	margin-top:0;
+}
+
+#shopicon {
+	margin-top:0;
+}
+#shopicon a {
+			border:0;
+	border-radius:0;
+	padding:16px 25px;
+}
 /* END HEADER */
 
 /* NAVBAR */
@@ -260,6 +273,8 @@ background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
         color: white;
       }
+
+
 
 /* END NAVBAR */
 
@@ -581,8 +596,15 @@ input[type="text"] {
 		border:none;
 	border-bottom: 1px solid #ddd;
 	padding:0;
-
-
+}
+input[type="password"] {
+	font-family:'Sanchez';
+	font-size: 16px;
+	margin-bottom: 0px;
+	border-radius: 0;
+		border:none;
+	border-bottom: 1px solid #ddd;
+	padding:0;
 }
 #contact_section input {
 	width:420px;
@@ -696,6 +718,173 @@ margin-top:50px;
 }
 input, textarea {color: #333;}
 .placeholder { color: #aaa; }
+
+
+
+/* LOGIN PAGE */
+
+#login_wrapper {
+	width:478px;
+	height:400px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-253px;
+	margin-top:-250px;
+}
+#login_tabs {
+	position:relative;
+	width:100%;
+	height:50px;
+}
+#login_tabs_login {
+	width:100px;
+	height:100%;
+	background-color:white;
+	position:absolute;
+	right:-28px;
+	z-index:17;
+	border-right: 14px solid #eee;
+	border-top:14px solid #eee;
+	cursor:pointer;
+}
+#login_tabs_signup {
+	width:130px;
+	height:100%;
+	background-color:white;
+	position:absolute;
+	right:86px;
+	z-index:17;
+	border-left: 14px solid #eee;
+	border-top:14px solid #eee;
+	cursor:pointer;
+}
+.login_tab_inactive {
+	background-color:#F7F7F7 !important;
+}
+.login_tab_inactive p{
+	text-shadow:1px 1px 0 #fff;
+	color:#999;
+}
+#login_contents {
+	width:418px;
+	position:relative;
+	background-color:#fff;
+	height:350px;
+	z-index:10;
+	border: 14px solid #eee;
+	padding:30px;
+}
+#login_contents img {
+	margin-bottom:30px;
+}
+#login_contents .full-width-separator {
+	background-color: #eee;
+}
+#login_email, #login_password {
+	width:100%;
+	height:30px;
+	border:none;
+	border-radius: none;
+	border-bottom: 1px solid #eee;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#login_password {
+	margin-bottom:10px;
+}
+#signup_email, #signup_password, #signup_name {
+	width:100%;
+	height:30px;
+	border:none;
+	border-radius: none;
+	border-bottom: 1px solid #eee;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#signup_password {
+	margin-bottom:10px;
+	border-bottom:0;
+}
+.tabs-text {
+	font-family: 'Montserrat-Bold';
+	font-size: 18px;
+	color:#BC1B26;
+	text-align:center;
+	padding-top:16px;
+}
+#boxmaker {
+	width:30px;
+	height:30px;
+	border: 1px solid #adb8c0;
+	position:absolute;
+	left:30px;
+	bottom:98px;
+	cursor:pointer;
+	z-index:0;
+}
+#login_submit {
+	width:100%;
+	background-color:#eee;
+	box-shadow:none;
+	border:none;
+	height:50px;
+	font-family: 'Montserrat-Bold';
+	font-size: 22px;
+	color: #999;
+	text-shadow: 1px 1px 0 #fff;
+}
+#signup_submit {
+	width:100%;
+	background-color:#eee;
+	box-shadow:none;
+	border:none;
+	height:50px;
+	font-family: 'Montserrat-Bold';
+	font-size: 22px;
+	color: #999;
+	text-shadow: 1px 1px 0 #fff;
+}
+label {
+    display: inline;
+}
+.regular-checkbox {
+    display: none;
+}
+
+.regular-checkbox + label{
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+}
+ 
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+
+}
+ 
+.regular-checkbox:checked + label {
+ 
+    color: #99a1a7;
+}
+ 
+.regular-checkbox:checked + label:before {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    color: #99a1a7;
+
+}
+.big-checkbox + label{
+    padding: 16px 18px 18px 42px;
+}
+ 
+.big-checkbox:checked + label:before {
+    font-size: 28px;
+    left: 6px;
+}
+
 /* FOOTER */
 #socialmedia p {
 	display:inline-block;
@@ -777,7 +966,13 @@ to {background-position: 0 0}
 #logo {
 	margin-top: 0px;
 }
-
+.nav-collapse.in .btn-group {
+	margin: 20px 10px 20px 40px !important;
+	float: left;
+}
+#profileicon{
+	margin-left:10px  !important;
+}
 #company_title {
 	font-family:'Montserrat-Bold';
 	font-size: 72px;
@@ -827,6 +1022,13 @@ to {background-position: 0 0}
 	float:left;
 	margin-right:30px;
 
+}
+.nav-collapse.in .btn-group {
+	margin: 20px 10px 20px 40px !important;
+	float: left;
+}
+#profileicon{
+	margin-left:10px  !important;
 }
 #company_title {
 	font-size: 34px;
