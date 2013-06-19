@@ -292,7 +292,7 @@ if($warning_exists == false) {
       </div>
             
       <div class="span6" id="form_div">
-        <form action="../base/sendform.php" id="contact_form" method="get" onsubmit="return false">
+        <form action="../base/sharedFiles/sendform.php" id="contact_form" method="get" onsubmit="return false">
           <input name="name" type="text" id="form_name" placeholder="Name"></input>
           <input name="email" type="text" id="form_email" placeholder="Email"></input>
           <textarea name="message" id="form_message" placeholder="Message"></textarea>

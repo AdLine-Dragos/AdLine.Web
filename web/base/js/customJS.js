@@ -241,7 +241,7 @@ function checkLanguage(textRO, textEN) {
             //start the ajax
             $.ajax({
                 //this is the php file that processes the data and send mail
-                url: "../base/sendform.php",
+                url: "../base/sharedFiles/sendform.php",
 
                 //GET method is used
                 type: "GET",
@@ -338,6 +338,7 @@ $('#login_wrapper').addClass('animated fadeInDown');
 
 $('#login_tabs_signup').click(function() {
     $(this).removeClass('login_tab_inactive');
+    $('#login_error').hide('fade').html("");
     $('#login_tabs_login').addClass('login_tab_inactive');
     $('#login_form').hide('fade',function(){
         $('#signup_form').show('fade');
