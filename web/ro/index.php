@@ -64,7 +64,7 @@ if($warning_exists == false) {
 <!-- Main Body -->
 
 <?php include 'header.html' ?>
-<!-- Link catre magazin - Mobile --><div class="visible-phone mobile-image" id="caption"> <span> <a href="#">
+<!-- Link catre magazin - Mobile --><div class="visible-phone mobile-image" id="caption"> <span> <a href="shop.php">
   <h3>Intra in magazin!</h3>
   </a> </span> <img class="lazy" src="../base/img/transparent.png" data-original="../base/assets/youview.jpg" width="767" height="588"> </div>
 <section class="container-fluid">

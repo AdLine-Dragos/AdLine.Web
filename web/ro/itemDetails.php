@@ -17,11 +17,14 @@ if (!empty($_POST['product_title'])){
      $product_title = "empty"; 
 } 
 
-$findproduct = "SELECT Title, Code, Features, PriceBasic, PriceMedium, PricePremium, sliderLinks, largeImageLink FROM templates WHERE Title ='" . sanitize($product_title) . "'";
+$findproduct = "SELECT Title, Code, Features, PriceBasic, PriceMedium, PricePremium, BasicFeatures, MediumFeatures, PremiumFeatures, sliderLinks, largeImageLink FROM templates WHERE Title ='" . sanitize($product_title) . "'";
 $result = mysql_query($findproduct);
 $row = sanitize(mysql_fetch_assoc($result));
 $sliderLinks = explode(",",$row['sliderLinks']);
 $featuresList = explode(",",$row['Features']);
+$basicFeatures = explode(",",$row['BasicFeatures']);
+$mediumFeatures = explode(",",$row['MediumFeatures']);
+$premiumFeatures = explode(",",$row['PremiumFeatures']);
 ?>
 
 <!doctype html>
@@ -83,7 +86,7 @@ $featuresList = explode(",",$row['Features']);
 	</div>
 	<div class="row-fluid marginTop">
 		<div class="span9" id="itemdetails_slider">
-			<ul class="bxslider">
+			<ul class="bxslider" id="product_slider">
   				<li><img src=<?php echo "$sliderLinks[0]" ?> /></li>
   				<li><img src=<?php echo "$sliderLinks[1]" ?> /></li>
   				<li><img src=<?php echo "$sliderLinks[2]" ?> /></li>
@@ -113,9 +116,11 @@ $featuresList = explode(",",$row['Features']);
 				<h4 class="priceplan_title white">SIMPLU</h4>
 				<img src="../base/img/plus_12x12.png">
 				<ul class="included_list">
-					<li>4 Pagini</li>
-					<li>Scheme de culoare diferite</li>
-					<li>Optimizare motoare de cautare</li>
+					<li><?php echo "$mediumFeatures[0]" ?></li>
+					<li><?php echo "$mediumFeatures[1]" ?></li>
+					<li><?php echo "$mediumFeatures[2]" ?></li>
+					<li></li>
+					<li></li>
 				</ul>
 			</div>
 			<a class="priceplan_proceed clearfix" href="#">CUMPARA</a>
@@ -129,8 +134,11 @@ $featuresList = explode(",",$row['Features']);
 				<div class="full-width-separator bg_white marginBottom" style="width:20%; margin-left:auto; margin-right:auto;"></div>
 				<h4 class="priceplan_title white" style="font-size: 25px">Produsul Final Include</h4>
 				<ul class="included_list" style="padding-bottom:10px;">
-					<li>Caracteristicile Standard</li>
-					<li>Texi si Imagini modificate<br>(la cererea ta)</li>
+					<li><?php echo "$basicFeatures[0]" ?></li>
+					<li><?php echo "$basicFeatures[1]" ?><br><?php echo "$basicFeatures[2]" ?></li>
+					<li></li>
+					<li></li>
+					<li></li>
 				</ul>
 				<a class="priceplan_proceed_basic clearfix" href="#">CUMPARA</a>
 			</div>
@@ -145,9 +153,11 @@ $featuresList = explode(",",$row['Features']);
 				<h4 class="priceplan_title white">MEDIU</h4>
 				<img src="../base/img/plus_12x12.png">
 				<ul class="included_list">
-					<li>5 Pagini</li>
-					<li>Formular de Contact</li>
-					<li>Design Adaptabil</li>
+					<li><?php echo "$premiumFeatures[0]" ?></li>
+					<li><?php echo "$premiumFeatures[1]" ?></li>
+					<li><?php echo "$premiumFeatures[2]" ?></li>
+					<li></li>
+					<li></li>
 				</ul>
 			</div>
 			<a class="priceplan_proceed clearfix" href="#">CUMPARA</a>

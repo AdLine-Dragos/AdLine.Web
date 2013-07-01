@@ -70,7 +70,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {}
 
 <div class="container-fluid" id="shop_welcomemsg">
 	<div class="row-fluid">
-		<h5 class="grey"> Welcome <?php echo $_SESSION['user']; ?>, here is the list of website templates. Have fun! </h5>
+		<h5 class="grey"> Welcome <?php echo ucwords($_SESSION['user']); ?>, here is the list of website templates. Have fun! </h5>
 	</div>
 </div>
 <!-- Masonry Shop -->
@@ -79,9 +79,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {}
 		<ul class="grid cs-style-3">
     <li>
         <figure>
-            <img class="lazy" src="../base/img/transparent.png" width="385" height="289" data-original="../base/assets/demo_images/1.png" alt="img01">
+            <img class="lazy" src="../base/img/transparent.png" width="385" height="290" data-original="../base/assets/template_images/PersonalPortfolio/personalportfolio.jpg" alt="Personal Portfolio">
             <figcaption>
-                <h3>Presentation Basic</h3>
+                <h3>Portfolio</h3>
                 <span>by Dragos Ionescu</span>
                 <a href="#">25 €</a>
             </figcaption>

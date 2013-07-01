@@ -367,13 +367,16 @@ $('#login_tabs_login').click(function() {
     $('.bxslider').bxSlider({
          adaptiveHeight: true,
          preload: 'visible',
-         speed: 1000
+         speed: 1000,
+         captions: true,
+        slideMargin: 30
     });        
     $("img.lazy").lazyload({
       threshold: 150,
       effect : "fadeIn"
     });
-   
+
+
 
 //ISOTOPE AND LAZY LoaD
    var $container = $('.grid');
