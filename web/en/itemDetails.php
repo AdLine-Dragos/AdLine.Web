@@ -17,7 +17,17 @@ if (!empty($_POST['product_title'])){
      $product_title = "empty"; 
 } 
 
-$findproduct = "SELECT Title, Code, Features, PriceBasic, PriceMedium, PricePremium, BasicFeatures, MediumFeatures, PremiumFeatures, sliderLinks, largeImageLink FROM templates WHERE Title ='" . sanitize($product_title) . "'";
+$findproduct = "SELECT Title, 
+					   Code, 
+					   Features, 
+					   PriceBasic, 
+					   PriceMedium, 
+					   PricePremium, 
+					   BasicFeatures, 
+					   MediumFeatures, 
+					   PremiumFeatures, 
+					   sliderLinks, 
+					   largeImageLink FROM templates WHERE Title ='" . sanitize($product_title) . "'";
 $result = mysql_query($findproduct);
 $row = sanitize(mysql_fetch_assoc($result));
 $sliderLinks = explode(",",$row['sliderLinks']);
@@ -73,8 +83,10 @@ $premiumFeatures = explode(",",$row['PremiumFeatures']);
 <div class="container-fluid" id="itemdetails_container">
 	<div class="row-fluid clearfix">
 
+			<div id="titleItemPage">
 			<h4><?php echo $row['Title'];?></h4>
 			<p>Product Code: <span class="red"><strong><?php echo $row['Code'];?></strong></span></p>
+		</div>
 
 		
 		<div class="full-width-separator clearfix"></div>
@@ -102,6 +114,7 @@ $premiumFeatures = explode(",",$row['PremiumFeatures']);
 			Screenshot
 		</a>
 	</div>
+
 	<div class="row-fluid" id="pricingplans">
 		<div class="span4" id="priceplan_medium">
 			<div class="priceplan_title clearfix darkBlue bg_white">MEDIUM</div>

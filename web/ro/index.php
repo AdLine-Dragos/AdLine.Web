@@ -270,7 +270,7 @@ if($warning_exists == false) {
         <p class="white para_formInfo">Suntem activi pe multe retele sociale, iar daca vrei sa afli noutatile cat mai rapid, ne poti urmari pe oricare dintre ele.</p>
         <div id="socialnetworks">
           <div class="soc_net_ico">
-             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
+             <a href="https://www.facebook.com/AdlineAdvertisement"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/twitter-128.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/linkedin-128.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/behance-128.png"></a>
@@ -292,7 +292,7 @@ if($warning_exists == false) {
       <div class="span6 visible-phone">
 <div id="socialnetworks">
           <div class="soc_net_ico">
-             <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
+             <a href="https://www.facebook.com/AdlineAdvertisement"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/facebook.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/twitter-128.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/linkedin-128.png"></a>
              <a href="#"><img class="lazy animated" src="../base/img/transparent.png" width="128" height"128" data-original="../base/assets/behance-128.png"></a>

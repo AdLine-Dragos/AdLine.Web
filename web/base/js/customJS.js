@@ -396,32 +396,32 @@ $('#login_tabs_login').click(function() {
     });
 
 //CENTER ISOTOPE ICONS
-if($container.outerWidth() < 1150 && $container.outerWidth() > 976) {
-    $container.css('marginLeft', ($container.outerWidth() - 850)/2-10 + "px");
+if($(window).width() < 1150 && $(window).width() > 976) {
+    $container.css('marginLeft', ($(window).width() - 850)/2-10 + "px");
 }
-else if($container.outerWidth() <= 976 && $container.outerWidth() > 768) {
-    $container.css('marginLeft', ($container.outerWidth() - 720)/2-10 + "px");
+else if($(window).width() <= 976 && $(window).width() > 768) {
+    $container.css('marginLeft', ($(window).width() - 720)/2-10 + "px");
 }
-else if($container.outerWidth() <= 768 && $container.outerWidth() > 450) {
-        $container.css('marginLeft', ($container.outerWidth() - 385)/2-10 + "px");
+else if($(window).width() <= 768 && $(window).width() > 450) {
+        $container.css('marginLeft', ($(window).width() - 385)/4-10 + "px");
 }
-else if($container.outerWidth() <= 450) {
-        $container.css('marginLeft', ($container.outerWidth() - 200)/2-10 + "px");
+else if($(window).width() <= 450) {
+        $container.css('marginLeft', ($(window).width() - 200)/4-10 + "px");
 }
 else
     $container.css('marginLeft', 0);
 $(window).resize(function() {
-    if($container.outerWidth() < 1150 && $container.outerWidth() > 976) {
-        $container.css('marginLeft', ($container.outerWidth() - 850)/2-10 + "px");
+    if($(window).width() < 1150 && $(window).width() > 976) {
+        $container.css('marginLeft', ($(window).width() - 850)/2-10 + "px");
     }
-    else if($container.outerWidth() <= 976 && $container.outerWidth() > 768) {
-        $container.css('marginLeft', ($container.outerWidth() - 720)/2-10 + "px");
+    else if($(window).width() <= 976 && $(window).width() > 768) {
+        $container.css('marginLeft', ($(window).width() - 720)/2-10 + "px");
     }
-    else if($container.outerWidth() <= 768 && $container.outerWidth() > 450) {
-        $container.css('marginLeft', ($container.outerWidth() - 385)/2-10 + "px");
+    else if($(window).width() <= 768 && $(window).width() > 450) {
+        $container.css('marginLeft', ($(window).width() - 385)/4-10 + "px");
     }
-    else if($container.outerWidth() <= 450) {
-        $container.css('marginLeft', ($container.outerWidth() - 200)/2-10 + "px");
+    else if($(window).width() <= 450) {
+        $container.css('marginLeft', ($(window).width() - 200)/4-10 + "px");
 }
     else
     $container.css('marginLeft', 0);
@@ -442,8 +442,6 @@ $(window).resize(function() {
     });
 
 
-
- 
 }); //end document ready
 
 
@@ -480,3 +478,22 @@ $('#login-home-link').click(function() {
     return false;
 });
 
+$('.likebutton_data').hide();
+$('.likebutton').click(function() {
+
+    $(this).siblings($('.likebutton_data')).children($('.likes')).hide();
+    $(this).siblings($('.likebutton_data')).animate({width: 'toggle'}, function() {
+    $(this).children($('.likes')).show();
+    });
+
+});
+
+$('.downloadbutton_data').hide();
+$('.downloadbutton').click(function() {
+
+    $(this).siblings($('.downloadbutton_data')).children($('.downloads')).hide();
+    $(this).siblings($('.downloadbutton_data')).animate({width: 'toggle'}, function() {
+    $(this).children($('.downloads')).show();
+    });
+
+});
